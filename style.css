@@ -1,0 +1,26 @@
+.full-width {
+    max-width: none;
+    
+}
+ .header-col {
+     padding: 0px;
+     text-align: center;
+     font-size: 200%
+ }
+
+.current-weather {
+    margin: 15px;
+    padding: 5px;
+}
+.radius {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.card-deck {
+    font-size: x-small;
+}
+
+.bg-primary {
+    
+}

@@ -11,8 +11,92 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    <div class="container full-width">
+      <!-- header -->
+      <div class="row">
+        <div class="col-md-12 header-col">
+          <div class="p-3 mb-2 bg-dark text-white header-col">Weather Dashboard</div>
+        </div>
+      </div>
+      <!-- side bar with search and history buttons -->
+      <div class="row">
+        <div class="col-md-4 justify-content-center">
+          <form action="">
+            <div class="input-group mb-4" style="width: 18rem; ">
+                <div class="input-group mb-4">
+                    <input type="search" placeholder="Your city to forecast..." aria-describedby="button-addon5" class="form-control" id="city-search">
+                    <div class="input-group-append">
+                      <button id="button-search" type="submit" class="btn btn-primary"></button>
+                    </div>
+                  </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="list-group list-group-flush" id="search-history">
+                        <!-- appending previously searched for cities into this div -->
+                    </div>
+                  </div>
+              </div>        
+            </div>
+          </form>
+         <!--current forecast  -->
+        <div class="col-md-8">
+            <div class="card current-weather">
+              <div class="container">
+                <div class="row">
+                  <div class="col" id="date-time-icon"></div>
+                </div>
+                <div class="row">
+                  <div class="col" id="temp-faren"></div>
+                </div>
+                <div class="row">
+                  <div class="col" id="humidity"></div>
+                </div>
+                <div class="row">
+                  <div class="col" id="wind-speed"></div>
+                </div>
+                <div class="row">
+                  <div class="col" id="uv-index"></div>
+                </div>
+              </div>
+            </div>
+            <!-- 5 day forecast cards -->
+            <div class="card-deck">
+              <div class="card bg-primary spacer">
+                <div class="card-body text-center">
+                  <div id="date-1"></div>
+                  <div id="5-day-icon-1"></div>
+                  <div id="temp-1"></div>
+                  <div id="humidity-1"></div>
+                </div>
+              </div>
+              <div class="card bg-primary spacer">
+                <div class="card-body text-center">
+                    <div id=""></div>
+                </div>
+              </div>
+              <div class="card bg-primary spacer">
+                <div class="card-body text-center">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+              <div class="card bg-primary spacer">
+                <div class="card-body text-center">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+              <div class="card bg-primary spacer">
+                <div class="card-body text-center">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+      
       
     <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" integrity="sha256-AdQN98MVZs44Eq2yTwtoKufhnU+uZ7v2kXnD5vqzZVo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 
