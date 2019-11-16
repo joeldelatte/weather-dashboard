@@ -59,22 +59,22 @@ var loadWeather = function() {
             $("#humidity-1").append(`Humidity: ${response.list[0].main.humidity}%`);
             console.log(response.list[0])
 
-            //  
+            
         })
 
 
     })};
 
-$("#button-search").on("click", function() {
+$("#button-search").on("click", function(event) {
     event.preventDefault();
     x = $("#city-search").val();
     $("#search-history").prepend(
         `<section class="list-group-item list-group-item-action clicked">${x}</section>`
     );
     loadWeather();
+    // window.localStorage.
   })
 
-// loadWeather();
 
  
 
